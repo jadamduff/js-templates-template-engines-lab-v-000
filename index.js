@@ -12,6 +12,9 @@ function addCommentForm() {
   let container = document.getElementById('post');
   let templateHTML = templateFn();
   container.innerHTML += templateHTML;
+  document.getElementById('createComment').addEventListener('submit', function(e) {
+    e.preventDefault();
+  })
 }
 
 function createPost() {
@@ -38,7 +41,3 @@ function postComment() {
   let templateHTML = templateFn({comment: comment, commenter: commenter});
   commentContainer.innerHTML += templateHTML;
 }
-
-document.getElementById('createComment').addEventListener('submit', function(e) {
-  e.preventDefault();
-})
