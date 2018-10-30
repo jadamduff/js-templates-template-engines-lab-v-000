@@ -20,4 +20,3 @@ function createPost() {
 
 document.getElementById('newPostSubmit').addEventListener('click', createPost());
 setPage();
-
