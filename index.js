@@ -15,6 +15,5 @@ function createPost() {
   let templateFn = _.template(postTemplate);
   let postContainer = document.getElementById('post');
   let templateHTML = templateFn({title: postTitle, body: postBody, author: postAuthor});
-  setPage();
   postContainer.innerHTML += templateHTML;
 }
