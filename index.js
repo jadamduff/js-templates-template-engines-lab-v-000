@@ -7,7 +7,7 @@ function setPage() {
 }
 
 function createPost() {
-  let postTitle = document.getElementById('postTtile').value;
+  let postTitle = document.getElementById('postTitle').value;
   let postBody = document.getElementById('postText').value;
   let postAuthor = document.getElementById('postAuthor').value;
 
