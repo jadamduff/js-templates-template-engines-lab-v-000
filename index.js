@@ -6,6 +6,8 @@ function setPage() {
   pageContainer.innerHTML += templateHTML;
 }
 
+setPage();
+
 function createPost() {
   let postTitle = document.getElementById('postTitle').value;
   let postBody = document.getElementById('postText').value;
@@ -17,5 +19,3 @@ function createPost() {
   let templateHTML = templateFn({title: postTitle, body: postBody, author: postAuthor});
   postContainer.innerHTML += templateHTML;
 }
-
-setPage();
