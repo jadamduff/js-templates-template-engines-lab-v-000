@@ -27,3 +27,13 @@ function createPost() {
   postContainer.innerHTML += templateHTML;
   addCommentForm();
 }
+
+function postComment() {
+  let comment = document.getElementById('commentText').value;
+  let commenter = document.getElementById('commenterName').value;
+
+  let commentTemplate = document.getElementById('comment-template').innerHTML;
+  let templateFn = _.template(commentTemplate);
+  let commentContainer = document.getElementById('commentList');
+  let templateHTML = templateFn({comment: comment; commenter: commenter});
+}
