@@ -5,14 +5,19 @@
   </head>
   <body>
     <main>
-      <div>
-        <h2>New Post</h2>
-        <form id="post-form" onsubmit="createPost()">
-          Title: <input type="text" id="postTitle"><br>
-          Post: <input type="textarea" id="postText"><br>
-          Author: <input type="text" id="postAuthor"><br>
-          <input type="submit" id="newPostSubmit">
-        </form>
+      <div id="sidebar" style="width: 300px; display: inline-block">
+
+      </div>
+      <div id="post" style="width: 600px; display: inline-block">
+        <div>
+          <h2>New Post</h2>
+          <form id="post-form" onsubmit="createPost()">
+            Title: <input type="text" id="postTitle"><br>
+            Post: <input type="textarea" id="postText"><br>
+            Author: <input type="text" id="postAuthor"><br>
+            <input type="submit" id="newPostSubmit">
+          </form>
+        </div>
       </div>
     </main>
     <script id="page-template" type="text/x-lodash-template">
@@ -20,7 +25,7 @@
 
       </div>
       <div id="post">
-
+      
       </div>
     </script>
     <script id="post-template" type="text/x-lodash-template">
