@@ -38,3 +38,7 @@ function postComment() {
   let templateHTML = templateFn({comment: comment, commenter: commenter});
   commentContainer.innerHTML += templateHTML;
 }
+
+document.getElementById('createComment').addEventListener('submit', function(e) {
+  e.preventDefault();
+})
