@@ -25,4 +25,5 @@ function createPost() {
   let postContainer = document.getElementById('post');
   let templateHTML = templateFn({title: postTitle, body: postBody, author: postAuthor});
   postContainer.innerHTML += templateHTML;
+  addCommentForm();
 }
