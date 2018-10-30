@@ -18,5 +18,4 @@ function createPost() {
   postContainer.innerHTML += templateHTML;
 }
 
-document.getElementById('newPostSubmit').addEventListener('click', createPost());
 setPage();
