@@ -5,15 +5,60 @@
   </head>
   <body>
     <main>
+      <div id="sidebar" style="width: 300px; display: inline-block">
+
+      </div>
+      <div id="post" style="width: 600px; display: inline-block">
+        <div id="post-form">
+          <h2>New Post</h2>
+          <form>
+            Title: <input type="text" id="postTitle"><br>
+            Post: <input type="textarea" id="postText"><br>
+            Author: <input type="text" id="postAuthor"><br>
+            <input type="submit" id="newPostSubmit">
+          </form>
+        </div>
+        <div id="post-main">
+          
+        </div>
+        <div id="commentsContainer">
+          <div id="commentList">
+            <ul>
+              
+            </ul>
+          </div>
+          <div id="newCommentForm">
+            <form>
+              Comment: <input type="textarea" id="commentText"><br>
+              Commenter: <input type="text" id="commenterName"><br>
+              <input type="submit" id="newCommentSubmit">
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
-    <script id="page-template" type="text/x-lodash-template">
-      <div class="sidebar" style="width: 300px; display: inline-block">
-
-      </div>
-      <div class="post" style="width: 600px; display: inline-block">
-
-      </div>
-      <div
+    <script id="post-template" type="text/x-lodash-template">
+      <article>
+        <header>
+          <%- title %>
+        </header>
+        <p>
+          <%- body %>
+        </p>
+        <footer>
+          <%- author %>
+        </footer>
+      </article>
+    </script>
+    <script id="comment-template" type="text/x-lodash-template">
+      <li>
+        <p>
+          <%- comment %>
+        </p>
+        <footer>
+          <%- commenter %>
+        </footer>
+      </li>
     </script>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
