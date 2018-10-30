@@ -35,6 +35,6 @@ function postComment() {
   let commentTemplate = document.getElementById('comment-template').innerHTML;
   let templateFn = _.template(commentTemplate);
   let commentContainer = document.getElementById('commentList');
-  let templateHTML = templateFn({comment: comment; commenter: commenter});
+  let templateHTML = templateFn({comment: comment, commenter: commenter});
   commentContainer.innerHTML += templateHTML;
 }
