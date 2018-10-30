@@ -11,7 +11,7 @@ function addCommentForm() {
   let templateFn = _.template(commentsTemplate);
   let container = document.getElementById('post');
   let templateHTML = templateFn();
-  conatiner.innerHTML += templateHTML;
+  container.innerHTML += templateHTML;
 }
 
 function createPost() {
