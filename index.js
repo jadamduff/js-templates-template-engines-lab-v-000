@@ -5,3 +5,5 @@ function setPage() {
   let templateHTML = templateFn();
   pageContainer.innerHTML += templateHTML;
 }
+
+setPage();
