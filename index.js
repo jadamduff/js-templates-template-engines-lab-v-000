@@ -6,7 +6,13 @@ function setPage() {
   pageContainer.innerHTML += templateHTML;
 }
 
-
+function addCommentForm() {
+  let commentsTemplate = document.getElementById('comments-template').innerHTML;
+  let templateFn = _.template(commentsTemplate);
+  let container = document.getElementById('post');
+  let templateHTML = templateFn();
+  conatiner.innerHTML += templateHTML;
+}
 
 function createPost() {
   let postTitle = document.getElementById('postTitle').value;
